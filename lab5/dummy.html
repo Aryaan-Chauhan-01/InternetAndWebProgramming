@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>QUESTION 4</title>
+
+        <style>
+            fieldset{
+                border-color: red;
+                width: 900px;
+                margin-top: 5%;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function F2C()
+            {
+                var TEMP = parseInt(document.getElementById("TEMP").value);
+                var C = [(TEMP-32)*5]/9;
+                document.getElementById("answer").value = C;
+            }
+
+            function C2F()
+            {
+                var TEMP = parseInt(document.getElementById("TEMP").value);
+                var F = (TEMP*1.8)+32;
+                document.getElementById("answer").value = F;
+            }
+        </script>
+    </head>
+
+    <body>
+        <center>
+            <fieldset>
+                ENTER THE TEMPERATURE : <input id="TEMP" type="text">
+                <br> <br> <br> 
+                USE THESE BUTTON TO CALCULATE THE TEMPERATURE
+                <br> <br> <br> 
+                <input type="submit" value="F TO C" onclick="F2C()">   <input type="submit" value="C TO F" onclick="C2F()">
+                <br> <br> <br>
+                CONVERTED VALUE BASED ON SELECTED OPTION
+                <br> <br>
+                <input type="text" id="answer">
+            </fieldset>	</center>    </body>	</html>

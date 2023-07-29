@@ -1,0 +1,23 @@
+<?php
+for($i=1;$i<4;$i++)
+{
+echo "For employee ".$i;
+$basic=10000;
+$s=readline("\nEnter the % sales");
+if($s=100)
+{
+$pi=1*$basic;
+echo "Total pay basic =".$basic."+ performance incentive=".$pi;
+}
+if($s>=75 && $s<100)
+{
+$pi=0.5*$basic;
+echo "Total pay basic =".$basic."+ performance incentive=".$pi;
+}
+else
+{
+$pi=0.1*$basic;
+echo "Total pay basic =".$basic."+ performance incentive=".$pi;
+}
+}
+?>

@@ -1,0 +1,7 @@
+<frameset rows="50%,50%">
+<frameset cols="50%,50%">
+<frame src="C:\Users\student\Desktop\20BCE1214LAB(IWP)\lab3\1.html">
+<frame src="C:\Users\student\Desktop\20BCE1214LAB(IWP)\lab3\2.html">
+</frameset>
+<frame src="C:\Users\student\Desktop\20BCE1214LAB(IWP)\lab3\3.html">
+</frameset>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>q2</title>
+</head>
+<body>
+<script type="text/javascript">
+var ac=parseInt(window.prompt("Enter the account number"));
+var ib=parseInt(window.prompt("Enter the initial balance"));
+var ch=parseInt(window.prompt("Enter the total charge"));
+var cr=parseInt(window.prompt("Enter the credit"));
+var ub=ib+ch-cr;
+if(ub<1000)
+ document.writeln("<h4>Not exceeded</h4>");
+else
+ document.writeln("<h4>Exceeded</h4>");
+
+document.writeln("<h4>Account number "+ac+" <br>initial balance ="+ib+"<br>Total charge = "+ch+"<br>credit applied ="+cr+"</h4>");
+</script>
+</body>
+</html>

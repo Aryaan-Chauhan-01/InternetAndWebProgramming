@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>20BCE1214</title>
+</head>
+<body>
+<img src="E:\5th Semester(BTech)\IWP_lab\lab2\lab2\indian-political-map.jpg" width="500" height="500" alt="India" usemap="#imap">
+<map name="imap">
+<area shape="rect"></area>
+</map>
+</body>
+</html>

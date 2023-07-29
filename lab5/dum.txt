@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>q2</title>
+</head>
+<body>
+<script type="text/javascript">
+var n=readLine(window.prompt("Enter Name"));
+var n1=readLine(window.prompt("Enter id"));
+var n2=readLine(window.prompt("Enter Semester"));
+var n3=readLine(window.prompt("Enter Department"));
+var ib=parseInt(window.prompt("Enter marks in C "));
+var ch=parseInt(window.prompt("Enter marks in C++"));
+var cr=parseInt(window.prompt("Enter marks in java"));
+var ub=ib+ch+cr;
+var avg=ub/3;
+
+document.writeln("<h4>Name "+n+" <br>Id "+n1+" <br>Semester "+n2+" <br>Department "+n3+" <br>total ="+ub+"<br>Average="+avg+"</h4>");
+</script>
+</body>
+</html>

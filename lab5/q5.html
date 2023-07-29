@@ -1,0 +1,81 @@
+<html>
+<head>
+<title> Lab-5 Q5</title>
+</head>
+<body>
+
+<form onsubmit=calc(event)>
+    
+       <table>
+        <tr> 		 
+          <th>Student ID:</th>
+          <th> <input type="text"  id="id1"></th>
+        </tr>
+        <tr>
+            <th>Name:</th>
+            <th> <input type="text"  id="id2"></th>
+        </tr>
+        <tr>
+            <th>Semester:</th>
+            <th><input type="text"  id="id3"> </th>
+        </tr>
+        <tr>
+            <th> Department:</th>
+            <th><input type="text"  id="id4"></th>
+        </tr>
+    
+        <tr>
+            <th>Subject1 Marks: </th>
+            <th><input type="number"  id="id6" > </th>
+        </tr>
+        
+        <tr>
+            <th>Subject2 Marks:</th>
+            <th><input type="number"   id="id8" ></th>
+        </tr>
+       
+        <tr>
+            <th>Subject3 Marks:</th>
+            <th><input type="number"  id="id10"> </th>
+        </tr> 
+      
+</table>     
+<input type= "submit"  value="Submit"  > 
+      
+</form>
+
+   <textarea id = "result"  rows="20"  cols="80"> </textarea>
+
+<script >
+ 
+    function calc(event)
+ {
+  event.preventDefault();
+     var sid = document.getElementById("id1").value;
+     var name = document.getElementById("id2").value;
+     var sem = document.getElementById("id3").value;
+     var dept = document.getElementById("id4").value;
+     
+
+      var mark1 = document.getElementById("id6").value;
+      var mark2 = document.getElementById("id8").value;
+      var mark3 = document.getElementById("id10").value;
+      var m1 = parseInt(mark1);
+      var m2 = parseInt(mark2);
+      var m3 = parseInt(mark3);
+     var total= m1+m2+m3;
+     var avg = total/3;
+  
+     document.getElementById("result").innerHTML="Student ID: "+ sid;
+     document.getElementById("result").innerHTML+= "\n Name: "+ name;
+     document.getElementById("result").innerHTML+= "\n Semester: "+ sem;
+     document.getElementById("result").innerHTML+= "\n Department: "+ dept;
+     document.getElementById("result").innerHTML+= "\n Subject1 Marks: "+ m1;
+     document.getElementById("result").innerHTML+= "\n Subject2 Marks: "+ m2;
+     document.getElementById("result").innerHTML+= "\n Subject3 Marks: "+ m3;
+     document.getElementById("result").innerHTML+= "\n Total Marks: "+ total;
+     document.getElementById("result").innerHTML+= "\n Average Marks: "+ avg;          
+ }
+</script>
+</body>
+</html>

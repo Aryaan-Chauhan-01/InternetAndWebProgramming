@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>20BCE1214 Image Map</title>
+</head>
+<body>
+<img src="E:\5th Semester(BTech)\IWP_lab\lab2\lab2\simple-compass-14519165.jpg" width="500" height="500" alt="compass" usemap="compass">
+<map name="compass">
+<area shape=></area>
+</map>
+</body>
+</html>

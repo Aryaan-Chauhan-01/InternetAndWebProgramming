@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Q2</title>
+</head>
+<body align="center">
+<fieldset style="border-color:red">
+<form onsubmit="return validate();">
+<h4>User Name:<input type="text" name="uname" id="uname"></h4>
+<p id="user"></p>
+<h4>Password:<input type="password" name="password" id="pw"></h4>
+<p id="pwi"></p>
+<h4>Confirm Password:<input type="password" name="cpassword" id="cpw"></h4>
+<p id="cpwi"></p>
+<h4>Adress:<textarea rows=10 cols=100></textarea></h4>
+<input type="submit"><input type="submit" value="Clear All">
+<p id="fill"></p>
+</form>
+</fieldset>
+<script>
+var u=document.getElementById("uname").value;
+var pa=document.getElementById("pw").value;
+var cpa=document.getElementById("cpw").value;
+if(u='' || pa='' || cpa=''){
+document.getElementById("fill").innerHTML="Please fill all the components";
+return false;
+}
+else if(text.length<8)
+{
+ document.getElementById("user").innerHTML="It should be of minimum length 3";
+return false;
+}
+var re1=\^$\;
+else if(pa!=cpa)
+{
+ document.getElementById("cpwi").innerHTML="The Confirm password must mach the password ";
+return false;
+}
+</script>
+</body>
+</html>

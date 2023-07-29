@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Lab 8-d</title>
+<head>
+<body>
+<?php
+$out1=$out2=$out3="";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$out1 = test_input($_POST["emp1"]);
+$out2 = test_input($_POST["emp2"]);
+$out3 = test_input($_POST["emp3"]);
+}
+function test_input($data) {
+$tot=10000;
+if($data==100)
+{
+$tot=2*$tot;
+}
+elseif($data>=75 && $data<100)
+{
+$tot=$tot+0.5*$tot;
+}
+else
+{
+$tot=$tot+0.1*$tot;
+}
+return $tot;
+}
+?>
+<form method="post" action="<?php echo
+htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<label for="emp1">Enter the target percentage of employee 1</label>
+<input type="text" name="emp1" ><br><br>
+<label for="emp2">Enter the target percentage of employee 2</label>
+<input type="text" name="emp2" ><br><br>
+<label for="emp3">Enter the target percentage of employee 3</label>
+<input type="text" name="emp3" ><br><br>
+<input type="submit" name="submit" value="submit">
+</form>
+<?php
+echo "<h2>Salary details:</h2>";
+echo $out1;
+echo "<br>";
+echo $out2;
+echo "<br>";
+echo $out3;
+?>
+</body>
+</html>

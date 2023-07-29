@@ -1,0 +1,25 @@
+table{
+border=1;
+background-color:turquoise;
+}
+td,th{
+display:block
+}
+td:hover{
+background-color:purple;
+color:yellow;
+}
+a{
+ background-color:yellow;
+ color:white;
+}
+b{
+background-color:grey;
+}
+c{
+background-color:red
+}
+d
+{
+background-color:lightyellow;
+}

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>ABC SHOP 20BCE1214</title>
+<script src="jquery-3.6.1.min.js"></script>
+<script>
+$(function(){
+$("#btn1").click(function(){
+alert("Bill generated");
+});
+});
+</script>
+</head>
+<body>
+<center>ABC SHOP</center>
+<fieldset>
+<legend>name</legend>
+<form id="abc">
+First Name<br><input type="text" id="d1"><br>
+Last Name<br><input type="text" id="d2"><br>
+</fieldset>
+<fieldset>
+<legend>Other Questions</legend>
+Choose a drink<br>
+<input type="radio" name="drink">coffee<br>
+<input type="radio" name="drink">tea<br>
+<input type="radio" name="drink">hot chocolate<br>
+<br>
+what ice cream do you like?<br>
+<input type="checkbox" name="ice">Chocolate<br>
+<input type="checkbox" name="ice">Chocolate Pudding<br>
+<input type="checkbox" name="ice">Chocolate Peanut Butter<br>
+<input type="checkbox" name="ice">Vanilla<br>
+<input type="checkbox" name="ice">Strawberry<br>
+<br>
+Select a school:<br>
+<select name="school" form="abc">
+<option value="Harvard">Harvard</option>
+<option value="MIT">MIT</option>
+<option value="Standford">Standford</option>
+</select>
+<br>
+<br>
+Please provide comments<br>
+<textarea name="comments" style="width:400px;height:100px"></textarea>
+</fieldset>
+<br>
+<input type="button" id="btn1" value="submit">
+</form>
+</body>
+</html>
